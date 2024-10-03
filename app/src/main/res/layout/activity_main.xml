@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf9f6"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="411dp"
+        android:layout_height="82dp"
+        android:background="#2A53A4"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Centro de Pneumologia e Alergia do Ceará  Sistema de Marcação de Consulta"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="399dp"
+        android:layout_height="106dp"
+        android:text="Bem-Vindos ao sistema de marcação de consultas On-line do Centro de Pneumologia e Alergia do Ceará"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="399dp"
+        android:layout_height="106dp"
+        android:text="Escolha e especialidade para iniciarmos o seu agendamento"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="273dp"
+        android:layout_height="34dp"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Especialidade"
+        android:textColor="#D75452"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="trocar"
+        android:text="Button"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
