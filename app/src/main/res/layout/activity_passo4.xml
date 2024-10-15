@@ -10,38 +10,78 @@
 
     <FrameLayout
         android:id="@+id/frameLayout3"
-        android:layout_width="411dp"
-        android:layout_height="98dp"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
         android:background="#2A53A4"
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Centro de Pneumologia e Alergia do Ceará  Sistema de Marcação de Consulta"
+            android:layout_height="match_parent"
+            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold" />
     </FrameLayout>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="telaAnterior4"
-        android:text="Button"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="562dp" />
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_bold"
+            android:text="Passo 4"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="292dp"
+        android:layout_height="1dp"
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"/>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="80dp"
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="199dp"
-        android:layout_height="82dp"
-        android:text="Tela 4"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="224dp" />
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="@font/inter_bold"
+        android:text=" * Campo em vermelho são de preenchimento obrigatório!"
+        android:textAlignment="center"
+        android:textColor="#D75452"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

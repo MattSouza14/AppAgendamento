@@ -52,14 +52,39 @@ public class Passo2 extends AppCompatActivity {
         spinnerPlano.setAdapter(especialidade);
 
         Spinner spinnerMedicos = findViewById(R.id.spinnerMedico);
-        String [] medicos = {
-                "Nabel Saldanha"
+        String[] medicos = {
+                "Nabel Saldanha",
+                "Nabel Saldanha2",
+                "Nabel Saldanha3",
+                "Nabel Saldanha4",
+                "Nabel Saldanha5"
+
+
 
 
         };
         ArrayAdapter<String> medico = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, medicos);
         medico.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMedicos.setAdapter(medico);
+
+        Spinner spinnerDatas = findViewById(R.id.spinnerDatas);
+        String[] datas = {
+                "17/10/2024 - quinta",
+                "18/10/2024 - sexta",
+                "19/10/2024 - sabado",
+                "20/10/2024 - domingo",
+                "21/10/2024 - segunda",
+                "22/10/2024 - terça",
+                "23/10/2024 - quarta",
+
+
+
+
+
+        };
+        ArrayAdapter<String> date = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, datas);
+        date.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerDatas.setAdapter(date);
     }
     public void trocar(View view){
         Intent terceira_tela = new Intent(this,Passo3.class);

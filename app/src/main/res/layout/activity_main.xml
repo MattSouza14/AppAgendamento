@@ -10,7 +10,7 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="418dp"
+        android:layout_width="match_parent"
         android:layout_height="95dp"
         android:background="#2A53A4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,8 +21,8 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="102dp"
-            android:text="Centro de Pneumologia e Alergia do Ceará  Sistema de Marcação de Consulta"
+            android:layout_height="match_parent"
+            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -46,32 +46,32 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="373dp"
-        android:layout_height="84dp"
+        android:layout_width="370dp"
+        android:layout_height="87dp"
         android:text="Escolha e especialidade para iniciarmos o seu agendamento"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353" />
+        app:layout_constraintVertical_bias="0.355" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="24dp"
         android:text="Especialidade"
         android:textColor="#D75452"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595" />
+        app:layout_constraintVertical_bias="0.592" />
 
     <Button
         android:id="@+id/button2"
@@ -112,8 +112,9 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="398dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="@font/inter_bold"
         android:text=" * Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
         android:textColor="#D75452"
@@ -150,14 +151,14 @@
 
     <Spinner
         android:id="@+id/spinnerEspecialidades"
-        android:layout_width="328dp"
-        android:layout_height="21dp"
+        android:layout_width="349dp"
+        android:layout_height="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.634" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
