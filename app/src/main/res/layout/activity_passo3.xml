@@ -26,14 +26,15 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:lineSpacingExtra="5dp"/>
     </FrameLayout>
 
     <Button
         android:id="@+id/button6"
         android:layout_width="155dp"
-        android:layout_height="44dp"
-        android:onClick="telaAnterior"
+        android:layout_height="48dp"
+        android:onClick="telaAnterior3"
         android:text="Anterior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +46,8 @@
     <Button
         android:id="@+id/button7"
         android:layout_width="155dp"
-        android:layout_height="44dp"
-        android:onClick="trocar"
+        android:layout_height="48dp"
+        android:onClick="proximaTela3"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
