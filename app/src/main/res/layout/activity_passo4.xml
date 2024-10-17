@@ -75,19 +75,23 @@
         android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome Completo" />
+        android:text="Nome Completo"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:hint="Informe seu nome completo" />
     <TextView
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sexo" />
+        android:text="Sexo"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="349dp"
@@ -102,7 +106,9 @@
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nascimento" />
+        android:text="Nascimento"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
     <EditText
         android:id="@+id/editTextDate2"
         android:layout_width="match_parent"
@@ -113,28 +119,176 @@
         android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="C.P.F" />
+        android:text="C.P.F"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:hint="000.000.000-00"/>
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Celular" />
+        android:text="Celular"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:inputType="numberSigned"
+        android:hint="(85)9.9999.9999"
         />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fixo"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="phone"
+        android:hint="(85)9.9999.9999"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="E-mail"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textEmailAddress"
+        android:hint="Informe seu endereço de e-mail" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Endereço"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPostalAddress"
+        android:hint="Informe o endereço" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Número"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:hint="n°" />
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Complemento"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:hint="Informe o complemento" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Bairro"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:hint="Informe o bairro"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Cidade"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Informe a cidade"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Estado"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="C.E.P"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:hint="00.000-000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nome do Responsável Financeiro(se paciente for menor e idade)"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Nome do responsável" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C.P.F"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#D75452"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="000.000.000-00"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Observação"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"/>
+
+
+
+
+
+
+    //------------------------------------------------------------
     <View
         android:id="@+id/view6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="110dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
