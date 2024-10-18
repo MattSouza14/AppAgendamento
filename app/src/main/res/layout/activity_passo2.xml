@@ -12,15 +12,15 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
+        android:fontFamily="@font/inter_bold"
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
-        android:fontFamily="@font/inter_bold"
         android:textColor="#D75452"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929" />
+        app:layout_constraintVertical_bias="0.944" />
 
     <FrameLayout
         android:id="@+id/frameLayout4"
@@ -47,7 +47,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="155dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:onClick="trocar"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,12 +55,12 @@
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.858" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="155dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:onClick="telaAnterior"
         android:text="Anterior"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,11 +68,11 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.858" />
 
     <FrameLayout
-        android:layout_width="132dp"
-        android:layout_height="32dp"
+        android:layout_width="119dp"
+        android:layout_height="33dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,7 @@
         android:id="@+id/view4"
         android:layout_width="410dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="80dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
