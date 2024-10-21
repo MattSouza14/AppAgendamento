@@ -32,16 +32,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:lineSpacingExtra="5dp"/>
     </FrameLayout>
 
     <Button
@@ -71,6 +61,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <FrameLayout
+        android:id="@+id/frameLayout5"
         android:layout_width="119dp"
         android:layout_height="33dp"
         android:background="#EEEFEF"
@@ -127,6 +118,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.258" />
+
+    <EditText
+        android:id="@+id/etDataNascimento"
+        android:layout_width="369dp"
+        android:layout_height="52dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Selecione a data"
+        android:padding="12dp"
+        android:textColor="#333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
 
     <TextView
         android:id="@+id/textView11"
@@ -208,5 +214,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="5dp"
+        android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="214dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

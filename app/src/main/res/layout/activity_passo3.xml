@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#FAF9F6"
     tools:context=".Passo3">
 
@@ -30,58 +31,25 @@
             android:lineSpacingExtra="5dp"/>
     </FrameLayout>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:onClick="telaAnterior3"
-        android:text="Anterior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:onClick="proximaTela3"
-        android:text="Próximo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
-    <View
-        android:id="@+id/view7"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="108dp"
-        android:background="#EEEFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <FrameLayout
         android:layout_width="120dp"
         android:layout_height="28dp"
         android:background="#EEEFEF"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231">
+        app:layout_constraintVertical_bias="0.23">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewPasso3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/inter_bold"
             android:text="Passo 3"
+
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
@@ -89,15 +57,30 @@
     </FrameLayout>
 
     <View
-        android:id="@+id/view8"
+        android:id="@+id/viewPasso3"
         android:layout_width="292dp"
         android:layout_height="1dp"
         android:background="#EEEFEF"
+        android:layout_marginLeft="118dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.258"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <View
+        android:id="@+id/viewPasso3_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
