@@ -28,7 +28,8 @@
         android:textAlignment="center"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="49dp" />
+        tools:layout_editor_absoluteY="49dp"
+        tools:ignore="MissingConstraints" />
 
     <FrameLayout
         android:id="@+id/frameLayout5"

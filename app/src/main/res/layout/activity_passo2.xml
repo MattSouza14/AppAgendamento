@@ -18,10 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#0C0C0C"
+            android:backgroundTint="#0C0C0C"
             android:lineSpacingExtra="5dp"
             android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
             android:textAlignment="center"
@@ -148,19 +151,22 @@
         android:id="@+id/button"
         android:layout_width="155dp"
         android:layout_height="48dp"
-        android:onClick="trocar"
-        android:text="Próximo"
+        android:layout_marginLeft="230dp"
         android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="230dp"/>
+        android:backgroundTint="#0C0C0C"
+        android:onClick="trocar"
+        android:text="Próximo" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="155dp"
         android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-50dp"
+        android:backgroundTint="#0C0C0C"
         android:onClick="telaAnterior"
         android:text="Anterior"
-        android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="30dp"/>
+        android:textColorLink="#0C0C0C" />
     <View
         android:id="@+id/view4"
         android:layout_width="410dp"
