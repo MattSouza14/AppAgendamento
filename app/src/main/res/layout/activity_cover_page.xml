@@ -67,6 +67,7 @@
         android:onClick="iniciar"
         android:text="Iniciar"
         android:textColorLink="#0C0C0C"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -177,7 +177,8 @@
             android:layout_height="48dp"
             android:onClick="telaAnterior3"
             android:text="Anterior"
-            android:backgroundTint="#0C0C0C"/>
+            android:backgroundTint="#0C0C0C"
+            android:textColor="#fff"/>
 
         <Button
             android:id="@+id/buttonPasso3"
@@ -186,7 +187,8 @@
             android:layout_marginLeft="20dp"
             android:onClick="proximaTela3"
             android:text="Próximo"
-            android:backgroundTint="#0C0C0C"/>
+            android:backgroundTint="#0C0C0C"
+            android:textColor="#fff"/>
     </LinearLayout>
 
     <View

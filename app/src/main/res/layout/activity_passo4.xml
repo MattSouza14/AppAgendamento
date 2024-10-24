@@ -88,22 +88,26 @@
         android:ems="10"
         android:inputType="text"
         android:hint="Informe seu nome completo"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
+
     <TextView
         android:id="@+id/textView16"
         android:layout_width="278dp"
         android:layout_height="24dp"
-        android:text="Sexo"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="#D75452"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
-        />
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Sexo"
+        android:textColor="#D75452" />
+
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/spinnerGenero"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.79"
@@ -118,14 +122,17 @@
         android:fontFamily="@font/inter_bold"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        />
     <EditText
         android:id="@+id/editTextDate2"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="date"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
 
     <TextView
         android:id="@+id/textView18"
@@ -135,7 +142,8 @@
         android:fontFamily="@font/inter_bold"
         android:text="C.P.F"
         android:textColor="#D75452"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -144,7 +152,9 @@
         android:ems="10"
         android:inputType="number"
         android:hint="000.000.000-00"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView19"
         android:layout_width="278dp"
@@ -160,7 +170,8 @@
         android:inputType="numberSigned"
         android:hint="(85)9.9999.9999"
         android:layout_marginLeft="30dp"
-        />
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView20"
         android:layout_width="278dp"
@@ -175,7 +186,9 @@
         android:layout_height="54dp"
         android:inputType="phone"
         android:hint="(85)9.9999.9999"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
 
     <TextView
         android:id="@+id/textView21"
@@ -191,7 +204,9 @@
         android:layout_height="54dp"
         android:inputType="textEmailAddress"
         android:hint="Informe seu endereço de e-mail"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView22"
         android:layout_width="278dp"
@@ -206,7 +221,9 @@
         android:layout_height="54dp"
         android:inputType="textPostalAddress"
         android:hint="Informe o endereço"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView23"
         android:layout_width="278dp"
@@ -221,7 +238,9 @@
         android:layout_height="54dp"
         android:inputType="number"
         android:hint="n°"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView24"
         android:layout_width="278dp"
@@ -236,7 +255,9 @@
         android:layout_height="54dp"
         android:inputType="text"
         android:hint="Informe o complemento"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -250,7 +271,9 @@
         android:layout_height="54dp"
         android:inputType="text"
         android:hint="Informe o bairro"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -263,7 +286,9 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:hint="Informe a cidade"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -272,10 +297,13 @@
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
+
     <Spinner
+        android:id="@+id/spinnerEstados"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -289,7 +317,9 @@
         android:layout_height="54dp"
         android:inputType="number"
         android:hint="00.000-000"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -302,7 +332,9 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:hint="Nome do responsável"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -317,7 +349,9 @@
         android:ems="10"
         android:inputType="number"
         android:hint="000.000.000-00"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"
@@ -330,8 +364,11 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="text"
-        android:layout_marginLeft="30dp"/>
-    
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"/>
+
+
     //------------------------------------------------------------
     <View
         android:id="@+id/view6"

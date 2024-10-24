@@ -82,7 +82,6 @@
         android:id="@+id/button2"
         android:layout_width="155dp"
         android:layout_height="48dp"
-        android:backgroundTint="#0C0C0C"
         android:onClick="trocar"
         android:text="Próximo"
         android:textAlignment="center"
@@ -93,7 +92,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.815"
-        android:backgroundTint="#0C0C0C"/>
+        android:backgroundTint="#0C0C0C"
+        android:textColor="#fff"/>
 
     <FrameLayout
         android:layout_width="120dp"
@@ -167,7 +167,8 @@
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.654"
+        android:textColor="#000000"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
