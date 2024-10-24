@@ -30,7 +30,7 @@ public class Passo2 extends AppCompatActivity {
             return insets;
         });
         Locale locale = new Locale("pt", "BR");
-        Locale.setDefault(locale); // Define o padrão
+        Locale.setDefault(locale);
         getResources().getConfiguration().setLocale(locale);
 
         View etDataNascimento = findViewById(R.id.etDataNascimento);

@@ -75,17 +75,16 @@
         android:rowCount="4"
         android:padding="10dp">
 
-
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Manhã"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:background="#DFE9FF"
+            android:textColor="#000000"
+            android:background="#B0C4DE"
             android:layout_columnSpan="1"
             android:layout_marginRight="10dp"/>
-
 
         <TextView
             android:layout_width="120dp"
@@ -93,10 +92,10 @@
             android:text="Tarde"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:background="#DFE9FF"
+            android:textColor="#000000"
+            android:background="#B0C4DE"
             android:layout_columnSpan="1"
             android:layout_marginRight="10dp"/>
-
 
         <TextView
             android:layout_width="120dp"
@@ -104,62 +103,80 @@
             android:text="Noite"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:background="#DFE9FF"
-            android:layout_columnSpan="1" />
+            android:textColor="#000000"
+            android:background="#B0C4DE"
+            android:layout_columnSpan="1"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="09:30"
-            android:background="#F7F7F7"/>
+            android:textColor="#000000"
+            android:background="#E0E0E0"
+        android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="13:30"
-            android:background="#F7F7F7"/>
+            android:textColor="#000000"
+            android:background="#E0E0E0"
+            android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="18:45"
-            android:background="#F7F7F7"/>
+            android:textColor="#000000"
+            android:background="#E0E0E0"
+            android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="10:45"
-            android:background="#DFE9FF"
+            android:textColor="#000000"
+            android:background="#A0C4FF"
             android:layout_marginTop="10dp"/>
-
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="14:00"
-            android:background="#DFE9FF"
+            android:textColor="#000000"
+            android:background="#A0C4FF"
             android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="19:00"
-            android:background="#DFE9FF"
+            android:textColor="#000000"
+            android:background="#A0C4FF"
             android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="11:15"
-            android:background="#F7F7F7"
+            android:textColor="#000000"
+            android:background="#E0E0E0"
             android:layout_marginTop="10dp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="16:30"
-            android:background="#F7F7F7"
+            android:textColor="#000000"
+            android:background="#E0E0E0"
             android:layout_marginTop="10dp"/>
+
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="20:15"
-            android:background="#F7F7F7"
+            android:textColor="#000000"
+            android:background="#E0E0E0"
             android:layout_marginTop="10dp"/>
 
     </GridLayout>

@@ -52,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/inter_bold"
+            android:textColor="#000000"
             android:text="Passo 2"
             android:textAlignment="center"
             android:textSize="20sp" />

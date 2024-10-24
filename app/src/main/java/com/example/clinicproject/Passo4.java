@@ -1,5 +1,6 @@
 package com.example.clinicproject;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Passo4 extends AppCompatActivity {
 
@@ -23,6 +27,30 @@ public class Passo4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Locale locale = new Locale("pt", "BR");
+        Locale.setDefault(locale);
+        getResources().getConfiguration().setLocale(locale);
+
+        View DataNascimento = findViewById(R.id.dataNascimento);
+
+
+        DataNascimento.setOnClickListener(v -> {
+
+            Calendar calendar = Calendar.getInstance();
+            int ano = calendar.get(Calendar.YEAR);
+            int mes = calendar.get(Calendar.MONTH);
+            int dia = calendar.get(Calendar.DAY_OF_MONTH);
+
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(Passo4.this,
+                    (view, year, month, dayOfMonth) -> {
+
+                    }, ano, mes, dia);
+
+
+            datePickerDialog.show();
+        });
+
         Spinner spinnerGenero = findViewById(R.id.spinnerGenero);
         String[] generos = {
                 "Escolha uma genero",
