@@ -22,12 +22,13 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#0F0F0F"
+            android:lineSpacingExtra="5dp"
             android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:lineSpacingExtra="5dp"/>
+            android:textStyle="bold" />
     </FrameLayout>
 
     <TextView
@@ -36,7 +37,7 @@
         android:layout_height="87dp"
         android:text="Bem-Vindos ao sistema de marcação de consultas On-line do Centro de Pneumologia e Alergia do Ceará"
         android:textAlignment="center"
-        android:textColor="#2A53A4"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +53,7 @@
         android:layout_height="87dp"
         android:text="Escolha e especialidade para iniciarmos o seu agendamento"
         android:textAlignment="center"
-        android:textColor="#2A53A4"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,9 +82,11 @@
         android:id="@+id/button2"
         android:layout_width="155dp"
         android:layout_height="48dp"
+        android:backgroundTint="#0C0C0C"
         android:onClick="trocar"
         android:text="Próximo"
         android:textAlignment="center"
+        android:textColorLink="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"

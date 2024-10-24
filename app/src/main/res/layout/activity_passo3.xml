@@ -19,6 +19,8 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#0C0C0C"
+            android:backgroundTint="#0C0C0C"
             android:lineSpacingExtra="5dp"
             android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
             android:textAlignment="center"
