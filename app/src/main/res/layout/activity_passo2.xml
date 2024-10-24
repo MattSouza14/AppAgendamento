@@ -13,7 +13,7 @@
         android:id="@+id/frameLayout4"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:background="#2A53A4"
+        android:background="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -80,18 +80,20 @@
         android:textColor="#D75452"
         android:textSize="16sp"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp" />
 
     <EditText
         android:id="@+id/etDataNascimento"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:clickable="true"
-        android:focusable="false"
         android:hint="Selecione a data"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="12dp"
         android:padding="12dp"
-        android:textColor="#333333"
-        android:layout_marginLeft="30dp"/>
+        android:drawableEnd="@drawable/calendario"/>
     <TextView
         android:id="@+id/textView11"
         android:layout_width="278dp"
@@ -151,7 +153,8 @@
         android:onClick="trocar"
         android:text="Próximo"
         android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="230dp"/>
+        android:layout_marginLeft="230dp"
+        android:backgroundTint="#0C0C0C"/>
 
     <Button
         android:id="@+id/button3"
@@ -160,7 +163,8 @@
         android:onClick="telaAnterior"
         android:text="Anterior"
         android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#0C0C0C"/>
     <View
         android:id="@+id/view4"
         android:layout_width="410dp"
@@ -178,5 +182,5 @@
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
         android:textColor="#D75452"
-       android:layout_marginTop="10dp" />
+        android:layout_marginTop="25dp" />
 </LinearLayout>

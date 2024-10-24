@@ -12,7 +12,7 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:background="#2A53A4"
+        android:background="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -89,7 +89,8 @@
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.815"
+        android:backgroundTint="#0C0C0C"/>
 
     <FrameLayout
         android:layout_width="120dp"
@@ -122,6 +123,7 @@
         android:text=" * Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
         android:textColor="#D75452"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"

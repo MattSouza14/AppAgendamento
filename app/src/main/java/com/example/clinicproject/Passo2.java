@@ -1,16 +1,21 @@
 package com.example.clinicproject;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import java.util.Calendar;
+import java.util.Locale;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+
 
 public class Passo2 extends AppCompatActivity {
 
@@ -24,6 +29,30 @@ public class Passo2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Locale locale = new Locale("pt", "BR");
+        Locale.setDefault(locale); // Define o padrão
+        getResources().getConfiguration().setLocale(locale);
+
+        View etDataNascimento = findViewById(R.id.etDataNascimento);
+
+
+        etDataNascimento.setOnClickListener(v -> {
+
+            Calendar calendar = Calendar.getInstance();
+            int ano = calendar.get(Calendar.YEAR);
+            int mes = calendar.get(Calendar.MONTH);
+            int dia = calendar.get(Calendar.DAY_OF_MONTH);
+
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(Passo2.this,
+                    (view, year, month, dayOfMonth) -> {
+
+                    }, ano, mes, dia);
+
+
+            datePickerDialog.show();
+        });
+
         //Esse array é para as especialidades (não alterar o id, está dando erro ao trocar o id)
         Spinner spinnerPlano = findViewById(R.id.spinner2);
         String[] especialidades = {

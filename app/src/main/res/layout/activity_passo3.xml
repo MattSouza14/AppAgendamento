@@ -13,7 +13,7 @@
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:background="#2A53A4">
+        android:background="#0C0C0C">
 
         <TextView
             android:id="@+id/textView"
@@ -174,7 +174,8 @@
             android:layout_width="155dp"
             android:layout_height="48dp"
             android:onClick="telaAnterior3"
-            android:text="Anterior" />
+            android:text="Anterior"
+            android:backgroundTint="#0C0C0C"/>
 
         <Button
             android:id="@+id/buttonPasso3"
@@ -182,7 +183,8 @@
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
             android:onClick="proximaTela3"
-            android:text="Próximo" />
+            android:text="Próximo"
+            android:backgroundTint="#0C0C0C"/>
     </LinearLayout>
 
     <View
@@ -194,7 +196,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="22dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/inter_bold"
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
