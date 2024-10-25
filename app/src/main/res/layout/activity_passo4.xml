@@ -374,6 +374,28 @@
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
 
+    <Button
+        android:id="@+id/btn_anterior4"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0C0C0C"
+        android:onClick="telaAnterior4"
+        android:text="Anterior"
+        android:textColor="#fff"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btn_proximo4"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="-50dp"
+        android:backgroundTint="#0C0C0C"
+        android:onClick="telaProxima4"
+        android:text="Próximo"
+        android:textColor="#fff" />
 
     //------------------------------------------------------------
     <View

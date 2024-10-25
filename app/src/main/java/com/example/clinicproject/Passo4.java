@@ -81,8 +81,13 @@ public class Passo4 extends AppCompatActivity {
 
 
     public void telaAnterior4(View view){
-        Intent primeira_tela = new Intent(this,Passo3.class);
-        startActivity(primeira_tela);
+        Intent tela3 = new Intent(this,Passo3.class);
+        startActivity(tela3);
+
+    }
+    public void telaProxima4(View view){
+        Intent tela5 = new Intent(this,Passo5.class);
+        startActivity(tela5);
 
     }
 }

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="10dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="#0C0C0C">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="5dp"
+                android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/pre_agendamento_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confira seu pré-agendamento !!!"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Detalhes do Paciente -->
+        <TextView
+            android:id="@+id/paciente_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paciente: João da Silva"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/cpf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.P.F.: 123.456.789-00"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/sexo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo: masculino"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/nascimento_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de nascimento: 10/01/1985"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e-mail: joaosilva@email.com"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/endereco_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço: Rua das Flores, 123"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/complemento_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complemento: Apto 12"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/bairro_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro: Centro"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/cidade_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade: Fortaleza"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/cep_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEP: 60000-000"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/medico_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médico: Dr. Carlos Pereira"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/especialidade_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especialidade: Pneumologia"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/data_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data: 25/10/2024 (Quarta)"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/hora_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora: 14:30"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/responsavel_nome_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsável Nome: Maria da Silva"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/responsavel_cpf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsável C.P.F.: 987.654.321-00"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/observacao_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observação: Nenhuma."
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/confirmacao_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click no Botão CONFIRMAR o seu pré-agendamento !!"
+            android:textColor="#D75452"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_anterior"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="telaAnterior5"
+                android:text="Anterior"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_confirmar"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:text="Confirmar"
+                android:backgroundTint="#0C0C0C"
+                android:layout_marginStart="16dp"
+
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
