@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ClinicProject</string>
+    <string name="header">Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta</string>
+    <string name="bem_vindos">Bem-Vindos ao sistema de marcação de consultas On-line do Centro de Pneumologia e Alergia do Ceará</string>
+    <string name="passo_1_msg">Escolha e especialidade para iniciarmos o seu agendamento</string>
+    <string name="especialidade">Especialidade</string>
+    <string name="passoTela1">Passo 1</string>
+    <string name="obrigatorio">* Campo em vermelho são de preenchimento obrigatório!</string>
+    <string name="btnTextos1">Próximo</string>
+    <string name="btnTexto2">Anterior</string>
+
+
+
+
+
 </resources>

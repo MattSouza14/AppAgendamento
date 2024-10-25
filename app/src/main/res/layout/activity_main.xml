@@ -11,7 +11,7 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="wrap_content"
         android:background="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,66 +24,86 @@
             android:layout_height="match_parent"
             android:backgroundTint="#0F0F0F"
             android:lineSpacingExtra="5dp"
-            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
+            android:text="@string/header"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/inter_bold" />
     </FrameLayout>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="370dp"
-        android:layout_height="87dp"
-        android:text="Bem-Vindos ao sistema de marcação de consultas On-line do Centro de Pneumologia e Alergia do Ceará"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bem_vindos"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="370dp"
-        android:layout_height="87dp"
-        android:text="Escolha e especialidade para iniciarmos o seu agendamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passo_1_msg"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.368" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="278dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
-        android:text="Especialidade"
+        android:padding="10dp"
+        android:text="@string/especialidade"
         android:textColor="#D75452"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/buttonAnteior2"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0C0C0C"
+        android:onClick="trocar"
+        android:text="@string/btnTextos1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textColorLink="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:onClick="trocar"
-        android:text="Próximo"
+        android:text="@string/btnTexto2"
+        android:textSize="20sp"
         android:textAlignment="center"
         android:textColorLink="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,22 +116,24 @@
         android:textColor="#fff"/>
 
     <FrameLayout
-        android:layout_width="120dp"
-        android:layout_height="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#EEEFEF"
+        android:gravity="center"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529">
+        app:layout_constraintVertical_bias="0.514">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/inter_bold"
-            android:text="Passo 1"
+            android:text="@string/passoTela1"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
@@ -121,30 +143,29 @@
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
-        android:layout_height="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/inter_bold"
-        android:text=" * Campo em vermelho são de preenchimento obrigatório!"
+        android:text="@string/obrigatorio"
         android:textAlignment="center"
         android:textColor="#D75452"
-        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintVertical_bias="0.899" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="292dp"
+        android:layout_width="320dp"
         android:layout_height="1dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.543" />
 
     <View
         android:id="@+id/view2"
@@ -156,19 +177,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintVertical_bias="0.847" />
 
     <Spinner
         android:id="@+id/spinnerEspecialidades"
         android:layout_width="360dp"
         android:layout_height="54dp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
-        android:textColor="#000000"/>
+        app:layout_constraintVertical_bias="0.686" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
