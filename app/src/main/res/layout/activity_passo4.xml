@@ -15,23 +15,38 @@
     tools:context=".Passo4">
 
     <FrameLayout
-        android:id="@+id/frameLayout3"
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:background="#0C0C0C"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_height="wrap_content"
+        android:background="#007EC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            app:srcCompat="@drawable/image"
+            android:layout_marginLeft="-30dp"/>
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#0C0C0C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
             android:lineSpacingExtra="5dp"
-            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
+            android:text="@string/header"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            app:layout_constraintVertical_bias="0.5" />
+
     </FrameLayout>
 
     <FrameLayout
