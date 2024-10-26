@@ -1,189 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF9F6"
-    android:orientation="vertical"
+    android:id="@+id/main"
     tools:context=".Passo2">
 
-    <FrameLayout
-        android:id="@+id/frameLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:background="#0C0C0C"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-        <TextView
-            android:id="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:lineSpacingExtra="5dp"
-            android:text="Centro de Pneumologia e Alergia do Ceará Sistema de Marcação de Consulta"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="214dp" />
+            android:layout_height="wrap_content">
 
-    </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0C0C0C"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/header"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
+            <Button
+                android:id="@+id/buttonAnteior2"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="trocar"
+                android:text="@string/btnTextos1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorLink="#0C0C0C"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.832"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.171" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout5"
-        android:layout_width="119dp"
-        android:layout_height="33dp"
-        android:background="#EEEFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167">
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="119dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="88dp"
+                android:background="#EEEFEF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout4">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/inter_bold"
-            android:textColor="#000000"
-            android:text="Passo 2"
-            android:textAlignment="center"
-            android:textSize="20sp" />
-    </FrameLayout>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Passo 2"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="292dp"
-        android:layout_height="1dp"
-        android:layout_marginLeft="118dp"
-        android:background="#EEEFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+            </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="278dp"
-        android:layout_height="24dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Data de Nascimento do Paciente"
-        android:textAlignment="viewStart"
-        android:textColor="#D75452"
-        android:textSize="16sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="292dp"
+                android:layout_height="1dp"
+                android:background="#EEEFEF"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" />
 
-    <EditText
-        android:id="@+id/etDataNascimento"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
-        android:hint="Selecione a data"
-        android:background="@android:color/transparent"
-        android:focusable="false"
-        android:clickable="true"
-        android:layout_marginLeft="30dp"
-        android:drawablePadding="12dp"
-        android:padding="12dp"
-        android:drawableEnd="@drawable/calendario"/>
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="278dp"
-        android:layout_height="24dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Plano"
-        android:textAlignment="viewStart"
-        android:textColor="#D75452"
-        android:textSize="16sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"/>
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="30dp" />
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="278dp"
-        android:layout_height="24dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Médico"
-        android:textAlignment="viewStart"
-        android:textColor="#D75452"
-        android:textSize="16sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"/>
-    <Spinner
-        android:id="@+id/spinnerMedico"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Data de Nascimento do Paciente"
+                android:textAlignment="viewStart"
+                android:textColor="#D75452"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view3"
+                app:layout_constraintVertical_bias="0.039" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="278dp"
-        android:layout_height="24dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Datas  disponíveis"
-        android:textAlignment="viewStart"
-        android:textColor="#D75452"
-        android:textSize="16sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"/>
+            <EditText
+                android:id="@+id/etDataNascimento"
+                android:layout_width="360dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="24dp"
 
-    <Spinner
-        android:id="@+id/spinnerDatas"
-        android:layout_width="360dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="30dp"/>
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:drawableEnd="@drawable/calendario"
+                android:drawablePadding="12dp"
+                android:focusable="false"
+                android:hint="Selecione a data"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.429" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:onClick="trocar"
-        android:text="Próximo"
-        android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="230dp"
-        android:backgroundTint="#0C0C0C"
-        android:textColor="#fff"/>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="96dp"
+                android:background="#EEEFEF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerMedico"
+                app:layout_constraintVertical_bias="0.904" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:onClick="telaAnterior"
-        android:text="Anterior"
-        android:layout_marginBottom="-50dp"
-        android:layout_marginLeft="30dp"
-        android:backgroundTint="#0C0C0C"
-        android:textColor="#fff"/>
-    <View
-        android:id="@+id/view4"
-        android:layout_width="410dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="90dp"
-        android:background="#EEEFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/obrigatorio"
+                android:textAlignment="center"
+                android:textColor="#D75452"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="* Campo em vermelho são de preenchimento obrigatório!"
-        android:textAlignment="center"
-        android:textColor="#D75452"
-        android:layout_marginTop="25dp" />
-</LinearLayout>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Plano"
+                android:textAlignment="viewStart"
+                android:textColor="#D75452"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.587" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="360dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.531" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Médico"
+                android:textAlignment="viewStart"
+                android:textColor="#D75452"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <Spinner
+                android:id="@+id/spinnerMedico"
+                android:layout_width="360dp"
+                android:layout_height="54dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.793" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Datas  disponíveis"
+                android:textAlignment="viewStart"
+                android:textColor="#D75452"
+                android:textSize="16sp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.714" />
+
+            <Spinner
+                android:id="@+id/spinnerDatas"
+                android:layout_width="360dp"
+                android:layout_height="54dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.647"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout4"
+                app:layout_constraintVertical_bias="0.667" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="155dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="trocar"
+                android:text="@string/btnTexto2"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorLink="#0C0C0C"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.171" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
