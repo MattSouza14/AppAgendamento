@@ -8,8 +8,8 @@
     <string name="obrigatorio">* Campo em vermelho são de preenchimento obrigatório!</string>
     <string name="btnTextos1">Próximo</string>
     <string name="btnTexto2">Anterior</string>
-
-
+    <string name="btnIniciar">Iniciar</string>
+    <string name="descricaoLogo">Logo da clinica</string>
 
 
 

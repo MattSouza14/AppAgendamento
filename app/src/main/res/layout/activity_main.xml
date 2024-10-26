@@ -71,13 +71,13 @@
         android:padding="10dp"
         android:text="@string/especialidade"
         android:textColor="#D75452"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <Button
         android:id="@+id/buttonAnteior2"
@@ -86,10 +86,10 @@
         android:backgroundTint="#0C0C0C"
         android:onClick="trocar"
         android:text="@string/btnTextos1"
-        android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="#fff"
         android:textColorLink="#0C0C0C"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.828"
@@ -98,10 +98,10 @@
         app:layout_constraintVertical_bias="0.815" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonVoltar2"
         android:layout_width="155dp"
         android:layout_height="48dp"
-        android:onClick="trocar"
+
         android:text="@string/btnTexto2"
         android:textSize="20sp"
         android:textAlignment="center"
