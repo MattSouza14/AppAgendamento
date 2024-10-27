@@ -95,7 +95,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nomePaciente"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -165,7 +165,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/cfpPaciente"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -183,14 +183,16 @@
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
+
     <EditText
+        android:id="@+id/celularPaciente"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:inputType="numberSigned"
-        android:hint="(85)9.9999.9999"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
-        android:textColor="#000000"/>
+        android:hint="(85)9.9999.9999"
+        android:inputType="numberSigned"
+        android:textColor="#000000" />
     <TextView
         android:id="@+id/textView20"
         android:layout_width="278dp"

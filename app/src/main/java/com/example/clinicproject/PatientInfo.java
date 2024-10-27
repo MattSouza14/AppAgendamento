@@ -1,4 +1,8 @@
-public class patientInfo {
+package com.example.clinicproject;
+import android.widget.EditText;
+
+import java.io.Serializable;
+public class PatientInfo  implements Serializable{
     private String completName;
     private String gender;
     private String dateBirth;
@@ -17,11 +21,18 @@ public class patientInfo {
     private String cpfFinancialManager;
     private String observation;
 
-    public patientInfo() {
-
+    public PatientInfo(String completName, Integer cpf) {
+        this.completName = completName;
+        this.cpf = cpf;
     }
 
-    public patientInfo(String completName, String gender, String dateBirth, Integer cpf,
+    public PatientInfo(String completName, Integer cpf, Integer cellPhoneNumber) {
+        this.completName = completName;
+        this.cpf = cpf;
+        this.cellPhoneNumber = cellPhoneNumber;
+    }
+
+    public PatientInfo(String completName, String gender, String dateBirth, Integer cpf,
                        Integer cellPhoneNumber, Integer landLine, String email, String address,
                        Integer houseNumber, String neighborhood, String city, String state, String cep) {
         this.completName = completName;
@@ -39,7 +50,7 @@ public class patientInfo {
         this.cep = cep;
     }
 
-    public patientInfo(String completName, String gender, String dateBirth, Integer cpf,
+    public PatientInfo(String completName, String gender, String dateBirth, Integer cpf,
                        Integer cellPhoneNumber, Integer landLine, String email, String address,
                        Integer houseNumber, String complement, String neighborhood, String city,
                        String state, String cep, String financialManager, String cpfFinancialManager,
@@ -64,22 +75,27 @@ public class patientInfo {
     }
 
     public String getCompletName() {
+
         return completName;
     }
 
     public void setCompletName(String completName) {
+
         this.completName = completName;
     }
 
     public String getGender() {
+
         return gender;
     }
 
     public void setGender(String gender) {
+
         this.gender = gender;
     }
 
-    public String getDateBirth() {
+    public String getDateBirth()
+    {
         return dateBirth;
     }
 
