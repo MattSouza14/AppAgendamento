@@ -22,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="97dp"
             app:srcCompat="@drawable/image"
+            android:contentDescription="@string/descricaoLogo"
             android:layout_marginLeft="-30dp"/>
 
         <TextView
@@ -47,11 +48,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
         android:text="@string/bem_vindos"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textColor="#0C0C0C"
+        android:textIsSelectable="false"
         android:textSize="20sp"
-        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
@@ -65,6 +68,7 @@
         android:layout_height="wrap_content"
         android:text="@string/passo_1_msg"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:fontFamily="@font/inter_bold"
@@ -113,18 +117,19 @@
         android:id="@+id/buttonVoltar2"
         android:layout_width="155dp"
         android:layout_height="48dp"
+        android:backgroundTint="@color/btnsColor"
+        android:onClick="voltar"
         android:text="@string/btnTexto2"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textColor="#fff"
         android:textColorLink="#0C0C0C"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815"
-        android:backgroundTint="@color/btnsColor"
-        android:textColor="#fff"/>
+        app:layout_constraintVertical_bias="0.815" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -168,15 +173,15 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="320dp"
-        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.540" />
 
     <View
         android:id="@+id/view2"

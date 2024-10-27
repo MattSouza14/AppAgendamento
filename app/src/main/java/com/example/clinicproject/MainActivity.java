@@ -45,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(segunda_tela);
 
     }
+    public void voltar(View view){
+        Intent tela_inicial = new Intent(this,CoverPage.class);
+        startActivity(tela_inicial);
+
+    }
 
 }

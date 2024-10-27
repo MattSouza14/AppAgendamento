@@ -1,16 +1,14 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF9F6"
-    android:orientation="vertical"
     tools:context=".Passo3">
 
-
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#007EC5"
@@ -22,13 +20,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="97dp"
-            app:srcCompat="@drawable/image"
-            android:layout_marginLeft="-30dp"/>
+            android:layout_marginLeft="-30dp"
+            app:srcCompat="@drawable/image" />
 
         <TextView
-           
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold"
             android:lineSpacingExtra="5dp"
             android:text="@string/header"
@@ -36,25 +36,27 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="100dp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5" />
 
     </FrameLayout>
 
-
     <FrameLayout
         android:layout_width="120dp"
         android:layout_height="28dp"
-        android:layout_marginTop="50dp"
-        android:background="#EEEFEF">
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263">
 
         <TextView
             android:id="@+id/textViewPasso3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/inter_bold"
             android:text="Passo 3"
             android:textAlignment="center"
@@ -62,180 +64,222 @@
             android:textSize="20sp" />
     </FrameLayout>
 
-
     <View
         android:layout_width="292dp"
         android:layout_height="2dp"
-        android:layout_marginLeft="118dp"
-        android:background="#EEEFEF" />
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
 
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Horários Disponíveis!"
-        android:textColor="#D75452"
         android:fontFamily="@font/inter_bold"
+        android:text="Horários Disponíveis!"
         android:textAlignment="center"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="135dp"/>
-
+        android:textColor="#D75452"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:columnCount="3"
+        android:padding="10dp"
         android:rowCount="4"
-        android:padding="10dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525">
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_marginRight="10dp"
+            android:background="#B0C4DE"
             android:text="Manhã"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:background="#B0C4DE"
-            android:layout_columnSpan="1"
-            android:layout_marginRight="10dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_marginRight="10dp"
+            android:background="#B0C4DE"
             android:text="Tarde"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:background="#B0C4DE"
-            android:layout_columnSpan="1"
-            android:layout_marginRight="10dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:background="#B0C4DE"
             android:text="Noite"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:background="#B0C4DE"
-            android:layout_columnSpan="1"/>
+            android:textStyle="bold" />
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="09:30"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-        android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="13:30"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="18:45"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="10:45"
-            android:textColor="#000000"
-            android:background="#A0C4FF"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="14:00"
-            android:textColor="#000000"
-            android:background="#A0C4FF"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="19:00"
-            android:textColor="#000000"
-            android:background="#A0C4FF"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="11:15"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="16:30"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/checkBoxColor"
             android:text="20:15"
-            android:textColor="#000000"
-            android:background="#E0E0E0"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
     </GridLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/buttonVolta3"
-            android:layout_width="155dp"
-            android:layout_height="48dp"
-            android:onClick="telaAnterior3"
-            android:text="Anterior"
-            android:backgroundTint="@color/btnsColor"
-            android:textColor="#fff"/>
-
-        <Button
-            android:id="@+id/buttonPasso3"
-            android:layout_width="155dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:onClick="proximaTela3"
-            android:text="Próximo"
-            android:backgroundTint="@color/btnsColor"
-            android:textColor="#fff"/>
-    </LinearLayout>
-
     <View
+        android:id="@+id/view7"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="50dp"
-        android:background="#EEEFEF" />
+        android:background="#EEEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
 
     <TextView
+        android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="22dp"
-        android:layout_marginTop="25dp"
         android:fontFamily="@font/inter_bold"
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
-        android:textColor="#D75452" />
+        android:textColor="#D75452"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/buttonVolta3"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/btnsColor"
+        android:onClick="telaAnterior3"
+        android:text="@string/btnTexto2"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/buttonPasso3"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/btnsColor"
+        android:onClick="proximaTela3"
+        android:text="@string/btnTextos1"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

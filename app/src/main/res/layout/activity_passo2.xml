@@ -26,22 +26,35 @@
                 android:id="@+id/frameLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#0C0C0C"
-                app:layout_constraintTop_toTopOf="parent"
+                android:background="#007EC5"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="97dp"
+                    android:contentDescription="@string/descricaoLogo"
+                    android:layout_marginLeft="-30dp"
+                    app:srcCompat="@drawable/image" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/inter_bold"
                     android:lineSpacingExtra="5dp"
                     android:text="@string/header"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
             </FrameLayout>
 
             <Button
@@ -57,43 +70,46 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.832"
+                app:layout_constraintHorizontal_bias="0.898"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.127" />
+                app:layout_constraintVertical_bias="0.166" />
 
             <FrameLayout
-                android:id="@+id/frameLayout5"
-                android:layout_width="119dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="88dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#EEEFEF"
+                android:gravity="center"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout4">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.262">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView8"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/inter_bold"
-                    android:text="Passo 2"
+                    android:text="@string/passoTela1"
                     android:textAlignment="center"
+                    android:textAllCaps="false"
                     android:textColor="#000000"
                     android:textSize="20sp" />
-
             </FrameLayout>
 
             <View
-                android:id="@+id/view3"
-                android:layout_width="292dp"
-                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
                 android:background="#EEEFEF"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout5"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.300" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -108,8 +124,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.257"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view3"
-                app:layout_constraintVertical_bias="0.039" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.334" />
 
             <EditText
                 android:id="@+id/etDataNascimento"
@@ -129,7 +145,7 @@
                 app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.429" />
+                app:layout_constraintVertical_bias="0.433" />
 
             <View
                 android:id="@+id/view4"
@@ -142,7 +158,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinnerMedico"
-                app:layout_constraintVertical_bias="0.904" />
+                app:layout_constraintVertical_bias="0.769" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -155,9 +171,10 @@
                 android:textColor="#D75452"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view4" />
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                app:layout_constraintVertical_bias="0.342" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -174,7 +191,7 @@
                 app:layout_constraintHorizontal_bias="0.091"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.587" />
+                app:layout_constraintVertical_bias="0.583" />
 
             <Spinner
                 android:id="@+id/spinner2"
@@ -186,13 +203,13 @@
                 app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.531" />
+                app:layout_constraintVertical_bias="0.527" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-               android:layout_marginTop="30dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="Médico"
                 android:textAlignment="viewStart"
@@ -203,7 +220,7 @@
                 app:layout_constraintHorizontal_bias="0.095"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.451" />
+                app:layout_constraintVertical_bias="0.445" />
 
             <Spinner
                 android:id="@+id/spinnerMedico"
@@ -214,24 +231,24 @@
                 app:layout_constraintHorizontal_bias="0.686"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.793" />
+                app:layout_constraintVertical_bias="0.797" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="Datas  disponíveis"
                 android:textAlignment="viewStart"
                 android:textColor="#D75452"
                 android:textSize="16sp"
-                android:layout_marginTop="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.714" />
+                app:layout_constraintVertical_bias="0.718" />
 
             <Spinner
                 android:id="@+id/spinnerDatas"
@@ -239,17 +256,17 @@
                 android:layout_height="54dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.647"
+                app:layout_constraintHorizontal_bias="0.686"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/frameLayout4"
-                app:layout_constraintVertical_bias="0.667" />
+                app:layout_constraintVertical_bias="0.664" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="155dp"
                 android:layout_height="48dp"
                 android:backgroundTint="@color/btnsColor"
-                android:onClick="trocar"
+                android:onClick="telaAnterior"
                 android:text="@string/btnTexto2"
                 android:textAlignment="center"
                 android:textColor="#fff"
@@ -257,10 +274,10 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintHorizontal_bias="0.089"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.127" />
+                app:layout_constraintVertical_bias="0.166" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
