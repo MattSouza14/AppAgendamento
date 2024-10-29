@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="#faf9f6"
     tools:context=".CoverPage">
 
@@ -36,7 +37,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#007EC5"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -44,25 +48,21 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="97dp"
-            app:srcCompat="@drawable/image"
-            android:layout_marginLeft="-30dp"/>
+            android:layout_marginLeft="-30dp"
+            app:srcCompat="@drawable/image" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_width="274dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold"
-            android:lineSpacingExtra="5dp"
-            android:text="@string/header"
+            android:text="Centro de Pneumologia e Alergia do Ceará"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="100dp"
-            app:layout_constraintVertical_bias="0.5" />
+            tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -72,9 +72,9 @@
         android:layout_height="48dp"
         android:layout_marginBottom="36dp"
         android:backgroundTint="@color/btnsColor"
+        android:fontFamily="@font/inter_bold"
         android:onClick="iniciar"
         android:text="@string/btnIniciar"
-        android:fontFamily="@font/inter_bold"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorLink="#0C0C0C"
@@ -82,5 +82,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="101dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Bem vindo!"
+        android:textColor="@color/btnsColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

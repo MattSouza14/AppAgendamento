@@ -31,6 +31,5 @@ public class Passo3 extends AppCompatActivity {
     public void telaAnterior3(View view){
         Intent primeira_tela = new Intent(this,Passo2.class);
         startActivity(primeira_tela);
-
     }
 }
