@@ -6,8 +6,8 @@ public class PatientInfo  implements Serializable{
     private String completName;
     private String gender;
     private String dateBirth;
-    private Integer cpf;
-    private Integer cellPhoneNumber;
+    private String cpf;
+    private String cellPhoneNumber;
     private Integer landLine;
     private String email;
     private String address;
@@ -21,19 +21,19 @@ public class PatientInfo  implements Serializable{
     private String cpfFinancialManager;
     private String observation;
 
-    public PatientInfo(String completName, Integer cpf) {
+    public PatientInfo(String completName, String cpf) {
         this.completName = completName;
         this.cpf = cpf;
     }
 
-    public PatientInfo(String completName, Integer cpf, Integer cellPhoneNumber) {
+    public PatientInfo(String completName, String cpf, String cellPhoneNumber) {
         this.completName = completName;
         this.cpf = cpf;
         this.cellPhoneNumber = cellPhoneNumber;
     }
 
-    public PatientInfo(String completName, String gender, String dateBirth, Integer cpf,
-                       Integer cellPhoneNumber, Integer landLine, String email, String address,
+    public PatientInfo(String completName, String gender, String dateBirth, String cpf,
+                       String cellPhoneNumber, Integer landLine, String email, String address,
                        Integer houseNumber, String neighborhood, String city, String state, String cep) {
         this.completName = completName;
         this.gender = gender;
@@ -50,8 +50,8 @@ public class PatientInfo  implements Serializable{
         this.cep = cep;
     }
 
-    public PatientInfo(String completName, String gender, String dateBirth, Integer cpf,
-                       Integer cellPhoneNumber, Integer landLine, String email, String address,
+    public PatientInfo(String completName, String gender, String dateBirth, String cpf,
+                       String cellPhoneNumber, Integer landLine, String email, String address,
                        Integer houseNumber, String complement, String neighborhood, String city,
                        String state, String cep, String financialManager, String cpfFinancialManager,
                        String observation) {
@@ -103,19 +103,19 @@ public class PatientInfo  implements Serializable{
         this.dateBirth = dateBirth;
     }
 
-    public Integer getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public Integer getCellPhoneNumber() {
+    public String getCellPhoneNumber() {
         return cellPhoneNumber;
     }
 
-    public void setCellPhoneNumber(Integer cellPhoneNumber) {
+    public void setCellPhoneNumber(String cellPhoneNumber) {
         this.cellPhoneNumber = cellPhoneNumber;
     }
 

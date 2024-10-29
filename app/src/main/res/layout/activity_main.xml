@@ -132,24 +132,23 @@
         app:layout_constraintVertical_bias="0.815" />
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
         android:background="#EEEFEF"
-        android:gravity="center"
-        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514">
+        app:layout_constraintVertical_bias="0.483">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/passoTela1"
+            android:text="Passo 1"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
@@ -178,10 +177,10 @@
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.540" />
+        app:layout_constraintVertical_bias="0.536" />
 
     <View
         android:id="@+id/view2"

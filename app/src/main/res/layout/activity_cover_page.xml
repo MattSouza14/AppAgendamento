@@ -72,15 +72,17 @@
         android:layout_height="48dp"
         android:layout_marginBottom="36dp"
         android:backgroundTint="@color/btnsColor"
+        android:fontFamily="@font/inter_bold"
         android:onClick="iniciar"
         android:text="@string/btnIniciar"
-        android:fontFamily="@font/inter_bold"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorLink="#0C0C0C"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.942" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,7 +48,28 @@
             app:layout_constraintVertical_bias="0.5" />
 
     </FrameLayout>
+    <Button
+        android:id="@+id/btn_anterior4"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/btnsColor"
+        android:onClick="telaAnterior4"
+        android:text="@string/btnTexto2"
+        android:textColor="#fff"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
 
+    <Button
+        android:id="@+id/btn_proximo4"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="-30dp"
+        android:backgroundTint="@color/btnsColor"
+        android:onClick="telaProxima4"
+        android:text="@string/btnTextos1"
+        android:textColor="#fff" />
     <FrameLayout
         android:layout_width="120dp"
         android:layout_height="28dp"
@@ -67,7 +88,6 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/inter_bold"
             android:text="Passo 4"
-
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
@@ -99,7 +119,8 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
         android:hint="Informe seu nome completo"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
@@ -127,16 +148,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468" />
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="278dp"
         android:layout_height="24dp"
-        android:text="Nascimento"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="#D75452"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
-        />
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Nascimento"
+        android:textColor="#D75452" />
+
     <EditText
         android:id="@+id/dataNascimento"
         android:layout_width="360dp"
@@ -145,6 +167,7 @@
         android:inputType="date"
         android:layout_marginLeft="30dp"
         android:hint="Selecione a data"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:focusable="false"
         android:clickable="true"
@@ -168,12 +191,14 @@
         android:id="@+id/cfpPaciente"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="000.000.000-00"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
-        android:textColor="#000000"/>
+        android:ems="11"
+        android:hint="000.000.000-00"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="@color/black" />
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="278dp"
@@ -191,7 +216,8 @@
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
         android:hint="(85)9.9999.9999"
-        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
         android:textColor="#000000" />
     <TextView
         android:id="@+id/textView20"
@@ -206,6 +232,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="phone"
+        android:textColorHint="@color/black"
         android:hint="(85)9.9999.9999"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
@@ -224,6 +251,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
         android:hint="Informe seu endereço de e-mail"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
@@ -241,6 +269,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="textPostalAddress"
+        android:textColorHint="@color/black"
         android:hint="Informe o endereço"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
@@ -260,13 +289,16 @@
         android:inputType="number"
         android:hint="n°"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView24"
         android:layout_width="278dp"
         android:layout_height="24dp"
+        android:textColorHint="@color/black"
         android:text="Complemento"
+        android:inputType="number"
         android:fontFamily="@font/inter_bold"
         android:textColor="#000000"
         android:layout_marginTop="40dp"
@@ -278,6 +310,7 @@
         android:hint="Informe o complemento"
         android:layout_marginLeft="30dp"
         android:background="@android:color/transparent"
+        android:textColorHint="@color/black"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -293,6 +326,7 @@
         android:inputType="text"
         android:hint="Informe o bairro"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
@@ -308,6 +342,7 @@
         android:layout_height="54dp"
         android:hint="Informe a cidade"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
@@ -339,6 +374,7 @@
         android:inputType="number"
         android:hint="00.000-000"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
@@ -354,6 +390,7 @@
         android:layout_height="54dp"
         android:hint="Nome do responsável"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
@@ -371,6 +408,7 @@
         android:inputType="number"
         android:hint="000.000.000-00"
         android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
     <TextView
@@ -389,28 +427,7 @@
         android:background="@android:color/transparent"
         android:textColor="#000000"/>
 
-    <Button
-        android:id="@+id/btn_anterior4"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#0C0C0C"
-        android:onClick="telaAnterior4"
-        android:text="Anterior"
-        android:textColor="#fff"
-        android:layout_marginBottom="-50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"/>
 
-    <Button
-        android:id="@+id/btn_proximo4"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginBottom="-50dp"
-        android:backgroundTint="#0C0C0C"
-        android:onClick="telaProxima4"
-        android:text="Próximo"
-        android:textColor="#fff" />
 
     //------------------------------------------------------------
     <View
@@ -431,7 +448,6 @@
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
         android:textColor="#D75452"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

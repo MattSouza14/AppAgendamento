@@ -65,7 +65,7 @@
     </FrameLayout>
 
     <View
-        android:layout_width="292dp"
+        android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"

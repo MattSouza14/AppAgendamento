@@ -1,5 +1,6 @@
 package com.example.clinicproject;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Passo5 extends AppCompatActivity {
-    private PatientInfo paciente;
+    PatientInfo paciente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +28,13 @@ public class Passo5 extends AppCompatActivity {
         Intent intent = getIntent();
         paciente = (PatientInfo) intent.getSerializableExtra("paciente");
 
-            TextView nomeCompletoText = findViewById(R.id.nomeCompletoTextView);
-            TextView cpfText = findViewById(R.id.cpfTextView);
-            nomeCompletoText.setText("Nome: " + paciente.getCompletName());
-            cpfText.setText("CPF: " + paciente.getCpf());
+           TextView nomeCompletoText = findViewById(R.id.nomeUser);
+           nomeCompletoText.setText(paciente.getCompletName());
+           TextView cpfText = findViewById(R.id.cpfUser);
+           cpfText.setText(paciente.getCpf());
+           TextView celularText = findViewById(R.id.celularUser);
+           celularText.setText(paciente.getCellPhoneNumber());
+
 
 
     }

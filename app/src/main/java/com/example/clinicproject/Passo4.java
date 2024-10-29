@@ -20,7 +20,21 @@ public class Passo4 extends AppCompatActivity {
 
     private EditText nomeCompleto;
     private EditText cpf;
-    private EditText celularPaciente;
+    //private EditText genero;
+    //private EditText dataNascimento;
+    private EditText numeroCelular;
+   // private EditText numeroFixo;
+    //private EditText email;
+    //private EditText endereco;
+    //private EditText numeroCasa;
+    //private EditText complemento;
+    //private EditText bairro;
+    //private EditText cidade;
+    //private EditText estado;
+    //private EditText cep;
+    //private EditText responsavelFinanceiro;
+    //private EditText cpfResponsavelFinanceiro;
+    //private EditText observacao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +54,9 @@ public class Passo4 extends AppCompatActivity {
 
         nomeCompleto = findViewById(R.id.nomePaciente);
         cpf = findViewById(R.id.cfpPaciente);
-        celularPaciente = findViewById(R.id.celularPaciente);
+        numeroCelular = findViewById(R.id.celularPaciente);
+
+
 
         View DataNascimento = findViewById(R.id.dataNascimento);
         DataNascimento.setOnClickListener(v -> {
@@ -90,23 +106,24 @@ public class Passo4 extends AppCompatActivity {
     public void telaProxima4(View view) {
         String nome = nomeCompleto.getText().toString().trim(); // remove espaços em branco
         String cpfString = cpf.getText().toString().trim();
+        String celular = numeroCelular.getText().toString().trim();
         if (nome.isEmpty()) {
-            nomeCompleto.setError("O nome completo é obrigatório");
+           nomeCompleto.setError("O nome completo é obrigatório");
+           return;
+        }
+        if(cpfString.isEmpty()){
+            cpf.setError("CPF é obrigatorio");
             return;
         }
-        if (cpfString.isEmpty()) {
-            cpf.setError("O CPF é obrigatório");
-            return;
+        if(celular.isEmpty()){
+            numeroCelular.setError("Número de celular é obrigatório ");
         }
-        try {
-            int cpfNumero = Integer.parseInt(cpfString);
-            PatientInfo paciente = new PatientInfo(nome, cpfNumero);
+
+            PatientInfo paciente = new PatientInfo(nome, cpfString,celular);
             Intent tela5 = new Intent(this, Passo5.class);
-            tela5.putExtra("paciente", paciente);
+           tela5.putExtra("paciente", paciente);
             startActivity(tela5);
-        } catch (NumberFormatException e) {
-            cpf.setError("CPF inválido");
-            celularPaciente.setError("Celular inválido");
+
         }
     }
-}
+

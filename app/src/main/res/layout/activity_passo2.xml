@@ -76,24 +76,22 @@
                 app:layout_constraintVertical_bias="0.166" />
 
             <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
                 android:background="#EEEFEF"
-                android:gravity="center"
-                android:padding="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.262">
+                app:layout_constraintVertical_bias="0.263">
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"
-                    android:text="@string/passoTela1"
+                    android:text="@string/passoTela2"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="#000000"
@@ -109,7 +107,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.300" />
+                app:layout_constraintVertical_bias="0.289" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -132,13 +130,14 @@
                 android:layout_width="360dp"
                 android:layout_height="54dp"
                 android:layout_marginStart="24dp"
-
+                android:inputType="date"
                 android:background="@android:color/transparent"
                 android:clickable="true"
                 android:drawableEnd="@drawable/calendario"
                 android:drawablePadding="12dp"
                 android:focusable="false"
                 android:hint="Selecione a data"
+                android:textColorHint="@color/black"
                 android:padding="12dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView9"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -198,6 +197,7 @@
                 android:layout_width="360dp"
                 android:layout_height="54dp"
                 android:layout_marginStart="24dp"
+                android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.333"
@@ -226,6 +226,7 @@
                 android:id="@+id/spinnerMedico"
                 android:layout_width="360dp"
                 android:layout_height="54dp"
+                android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.686"
@@ -254,6 +255,7 @@
                 android:id="@+id/spinnerDatas"
                 android:layout_width="360dp"
                 android:layout_height="54dp"
+                android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.686"
