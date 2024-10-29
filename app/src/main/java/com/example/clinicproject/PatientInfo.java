@@ -30,6 +30,7 @@ public class PatientInfo  implements Serializable{
         this.completName = completName;
         this.cpf = cpf;
         this.cellPhoneNumber = cellPhoneNumber;
+
     }
 
     public PatientInfo(String completName, String gender, String dateBirth, String cpf,

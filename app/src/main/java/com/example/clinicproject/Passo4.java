@@ -116,6 +116,7 @@ public class Passo4 extends AppCompatActivity {
             return;
         }
         if(celular.isEmpty()){
+
             numeroCelular.setError("Número de celular é obrigatório ");
         }
 

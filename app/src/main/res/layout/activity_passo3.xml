@@ -65,7 +65,7 @@
     </FrameLayout>
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="292dp"
         android:layout_height="2dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -136,94 +136,103 @@
             android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb1"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="09:30"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb2"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="13:30"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb3"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="18:45"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb4"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="10:45"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb5"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="14:00"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb6"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="19:00"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb7"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="11:15"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb8"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="16:30"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CheckBox
+            android:id="@+id/cb9"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/checkBoxColor"
             android:text="20:15"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </GridLayout>
 
