@@ -120,31 +120,31 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintHorizontal_bias="0.195"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.334" />
+                app:layout_constraintVertical_bias="0.344" />
 
             <EditText
                 android:id="@+id/etDataNascimento"
                 android:layout_width="360dp"
                 android:layout_height="54dp"
-                android:layout_marginStart="24dp"
-                android:inputType="date"
-                android:background="@android:color/transparent"
+
+                android:background="@color/white"
                 android:clickable="true"
                 android:drawableEnd="@drawable/calendario"
                 android:drawablePadding="12dp"
                 android:focusable="false"
                 android:hint="Selecione a data"
-                android:textColorHint="@color/black"
+                android:inputType="date"
                 android:padding="12dp"
+                android:textColorHint="@color/black"
                 app:layout_constraintBottom_toBottomOf="@+id/textView9"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.433" />
+                app:layout_constraintVertical_bias="0.43" />
 
             <View
                 android:id="@+id/view4"
@@ -157,7 +157,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinnerMedico"
-                app:layout_constraintVertical_bias="0.769" />
+                app:layout_constraintVertical_bias="0.995" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -173,7 +173,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view4"
-                app:layout_constraintVertical_bias="0.342" />
+                app:layout_constraintVertical_bias="0.896" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -187,23 +187,24 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintHorizontal_bias="0.069"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.583" />
+                app:layout_constraintVertical_bias="0.611" />
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="360dp"
                 android:layout_height="54dp"
-                android:layout_marginStart="24dp"
+
+                android:background="@color/white"
                 android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.527" />
+                app:layout_constraintVertical_bias="0.692" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -217,22 +218,23 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintHorizontal_bias="0.072"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.445" />
+                app:layout_constraintVertical_bias="0.459" />
 
             <Spinner
                 android:id="@+id/spinnerMedico"
                 android:layout_width="360dp"
-                android:layout_height="54dp"
+                android:layout_height="56dp"
+                android:background="@color/white"
                 android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.797" />
+                app:layout_constraintVertical_bias="0.542" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -246,22 +248,23 @@
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintHorizontal_bias="0.093"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.718" />
+                app:layout_constraintVertical_bias="0.743" />
 
             <Spinner
                 android:id="@+id/spinnerDatas"
                 android:layout_width="360dp"
                 android:layout_height="54dp"
+                android:background="@color/white"
                 android:outlineSpotShadowColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/frameLayout4"
-                app:layout_constraintVertical_bias="0.664" />
+                app:layout_constraintVertical_bias="0.822" />
 
             <Button
                 android:id="@+id/button2"

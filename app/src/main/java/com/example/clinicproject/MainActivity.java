@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 "Pneumologista",
                 "Pneumopediatra"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, especialidades);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner, especialidades);
+        adapter.setDropDownViewResource(R.layout.spinner);
         spinnerEspecialidades.setAdapter(adapter);
     }
     public void trocar(View view){
@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void voltar(View view){
         Intent tela_inicial = new Intent(this,CoverPage.class);
+        tela_inicial.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(tela_inicial);
+        finish();
 
     }
 

@@ -65,7 +65,7 @@
     </FrameLayout>
 
     <View
-        android:layout_width="292dp"
+        android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -267,8 +267,10 @@
         android:layout_height="48dp"
         android:backgroundTint="@color/btnsColor"
         android:onClick="telaAnterior3"
+
         android:text="@string/btnTexto2"
         android:textColor="#fff"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -284,6 +286,7 @@
         android:onClick="proximaTela3"
         android:text="@string/btnTextos1"
         android:textColor="#fff"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.898"

@@ -55,7 +55,7 @@ public class Passo2 extends AppCompatActivity {
 
         //Esse array é para as especialidades (não alterar o id, está dando erro ao trocar o id)
         Spinner spinnerPlano = findViewById(R.id.spinner2);
-        String[] especialidades = {
+        String[] plano = {
                 "Escolha uma Plano !!",
                 "AMIL-ONE -S1500",
                 "AMIL-REDE - 100 A 450 ",
@@ -76,13 +76,13 @@ public class Passo2 extends AppCompatActivity {
                 "UNIMED - PESSOA FISICA - MULTIPLAN/ESTILO/MULTIMAX/INTERCÂMBIOS/SAULUTE MAX",
                 "VALE SAÚDE SEMPRE"
         };
-        ArrayAdapter<String> especialidade = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, especialidades);
-        especialidade.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerPlano.setAdapter(especialidade);
+        ArrayAdapter<String> planos = new ArrayAdapter<>(this, R.layout.spinner, plano);
+        planos.setDropDownViewResource(R.layout.spinner);
+        spinnerPlano.setAdapter(planos);
 
         Spinner spinnerMedicos = findViewById(R.id.spinnerMedico);
         String[] medicos = {
-                "Nabel Saldanha",
+                "Médicos disponiveis",
                 "Nabel Saldanha2",
                 "Nabel Saldanha3",
                 "Nabel Saldanha4",
@@ -92,13 +92,13 @@ public class Passo2 extends AppCompatActivity {
 
 
         };
-        ArrayAdapter<String> medico = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, medicos);
-        medico.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> medico = new ArrayAdapter<>(this, R.layout.spinner, medicos);
+        medico.setDropDownViewResource(R.layout.spinner);
         spinnerMedicos.setAdapter(medico);
 
         Spinner spinnerDatas = findViewById(R.id.spinnerDatas);
         String[] datas = {
-                "17/10/2024 - quinta",
+                "Escolha uma data!!!",
                 "18/10/2024 - sexta",
                 "19/10/2024 - sabado",
                 "20/10/2024 - domingo",
@@ -111,8 +111,8 @@ public class Passo2 extends AppCompatActivity {
 
 
         };
-        ArrayAdapter<String> date = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, datas);
-        date.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> date = new ArrayAdapter<>(this, R.layout.spinner, datas);
+        date.setDropDownViewResource(R.layout.spinner);
         spinnerDatas.setAdapter(date);
     }
     public void trocar(View view){
@@ -122,7 +122,9 @@ public class Passo2 extends AppCompatActivity {
     }
     public void telaAnterior(View view){
         Intent primeira_tela = new Intent(this,MainActivity.class);
+        primeira_tela.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(primeira_tela);
+        finish();
 
     }
 }

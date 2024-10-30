@@ -59,6 +59,8 @@ public class Passo3 extends AppCompatActivity {
 
     public void telaAnterior3(View view) {
         Intent primeira_tela = new Intent(this, Passo2.class);
+        primeira_tela.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(primeira_tela);
+        finish();
     }
 }

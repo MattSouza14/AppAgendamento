@@ -1,12 +1,14 @@
 package com.example.clinicproject;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -45,5 +47,20 @@ public class Passo5 extends AppCompatActivity {
         Intent tela4 = new Intent(this,Passo4.class);
         startActivity(tela4);
 
+    }
+    public void confirmarConsulta(View view) {
+        new AlertDialog.Builder(this)
+                .setTitle("Consulta Agendada")
+                .setMessage("Sua consulta foi agendada com sucesso!")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(Passo5.this, CoverPage.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+                    }
+                })
+                .show();
     }
 }

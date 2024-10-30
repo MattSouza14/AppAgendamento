@@ -55,6 +55,7 @@
         android:backgroundTint="@color/btnsColor"
         android:onClick="telaAnterior4"
         android:text="@string/btnTexto2"
+        android:textSize="20sp"
         android:textColor="#fff"
         android:layout_marginBottom="-50dp"
         android:layout_marginTop="20dp"
@@ -68,6 +69,7 @@
         android:layout_marginBottom="-30dp"
         android:backgroundTint="@color/btnsColor"
         android:onClick="telaProxima4"
+        android:textSize="20sp"
         android:text="@string/btnTextos1"
         android:textColor="#fff" />
     <FrameLayout
@@ -121,9 +123,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
+        android:background="@color/white"
         android:hint="Informe seu nome completo"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
         android:textColor="#000000"/>
 
     <TextView
@@ -141,6 +143,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
+        android:background="@color/white"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,7 +171,7 @@
         android:layout_marginLeft="30dp"
         android:hint="Selecione a data"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:focusable="false"
         android:clickable="true"
         android:textColor="#000000"
@@ -192,7 +195,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:ems="11"
         android:hint="000.000.000-00"
         android:inputType="number"
@@ -214,7 +217,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:hint="(85)9.9999.9999"
         android:textColorHint="@color/black"
         android:inputType="phone"
@@ -235,7 +238,7 @@
         android:textColorHint="@color/black"
         android:hint="(85)9.9999.9999"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
 
     <TextView
@@ -254,7 +257,7 @@
         android:textColorHint="@color/black"
         android:hint="Informe seu endereço de e-mail"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView22"
@@ -272,7 +275,7 @@
         android:textColorHint="@color/black"
         android:hint="Informe o endereço"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView23"
@@ -290,7 +293,7 @@
         android:hint="n°"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:id="@+id/textView24"
@@ -309,7 +312,7 @@
         android:inputType="text"
         android:hint="Informe o complemento"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColorHint="@color/black"
         android:textColor="#000000"/>
     <TextView
@@ -327,7 +330,7 @@
         android:hint="Informe o bairro"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -343,7 +346,7 @@
         android:hint="Informe a cidade"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -359,6 +362,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -375,7 +379,7 @@
         android:hint="00.000-000"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="wrap_content"
@@ -391,7 +395,7 @@
         android:hint="Nome do responsável"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -409,7 +413,7 @@
         android:hint="000.000.000-00"
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
         android:layout_width="278dp"
@@ -424,7 +428,7 @@
         android:layout_height="54dp"
         android:inputType="text"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:background="@color/white"
         android:textColor="#000000"/>
 
 

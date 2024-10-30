@@ -122,8 +122,10 @@ public class Passo4 extends AppCompatActivity {
 
             PatientInfo paciente = new PatientInfo(nome, cpfString,celular);
             Intent tela5 = new Intent(this, Passo5.class);
-           tela5.putExtra("paciente", paciente);
+            tela5.putExtra("paciente", paciente);
+            tela5.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(tela5);
+            finish();
 
         }
     }
