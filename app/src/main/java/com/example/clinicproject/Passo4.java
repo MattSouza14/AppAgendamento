@@ -78,8 +78,8 @@ public class Passo4 extends AppCompatActivity {
                 "Masculino",
                 "Feminino"
         };
-        ArrayAdapter<String> generoAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, generos);
-        generoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> generoAdapter = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, generos);
+        generoAdapter.setDropDownViewResource(R.layout.spinner);
         spinnerGenero.setAdapter(generoAdapter);
 
         Spinner spinnerEstados = findViewById(R.id.spinnerEstados);
@@ -93,8 +93,8 @@ public class Passo4 extends AppCompatActivity {
                 "Rio Grande do Sul",
                 "Ceará"
         };
-        ArrayAdapter<String> estadoAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, estados);
-        estadoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> estadoAdapter = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, estados);
+        estadoAdapter.setDropDownViewResource(R.layout.spinner);
         spinnerEstados.setAdapter(estadoAdapter);
     }
 

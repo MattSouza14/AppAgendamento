@@ -76,7 +76,7 @@ public class Passo2 extends AppCompatActivity {
                 "UNIMED - PESSOA FISICA - MULTIPLAN/ESTILO/MULTIMAX/INTERCÂMBIOS/SAULUTE MAX",
                 "VALE SAÚDE SEMPRE"
         };
-        ArrayAdapter<String> planos = new ArrayAdapter<>(this, R.layout.spinner, plano);
+        ArrayAdapter<String> planos = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, plano);
         planos.setDropDownViewResource(R.layout.spinner);
         spinnerPlano.setAdapter(planos);
 
@@ -92,7 +92,7 @@ public class Passo2 extends AppCompatActivity {
 
 
         };
-        ArrayAdapter<String> medico = new ArrayAdapter<>(this, R.layout.spinner, medicos);
+        ArrayAdapter<String> medico = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, medicos);
         medico.setDropDownViewResource(R.layout.spinner);
         spinnerMedicos.setAdapter(medico);
 
@@ -111,7 +111,7 @@ public class Passo2 extends AppCompatActivity {
 
 
         };
-        ArrayAdapter<String> date = new ArrayAdapter<>(this, R.layout.spinner, datas);
+        ArrayAdapter<String> date = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, datas);
         date.setDropDownViewResource(R.layout.spinner);
         spinnerDatas.setAdapter(date);
     }

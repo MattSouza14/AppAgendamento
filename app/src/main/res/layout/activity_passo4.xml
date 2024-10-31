@@ -112,21 +112,23 @@
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Nome Completo"
+        android:textSize="18sp"
         android:fontFamily="@font/inter_bold"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
+
     <EditText
         android:id="@+id/nomePaciente"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/black"
-        android:background="@color/white"
-        android:hint="Informe seu nome completo"
         android:layout_marginLeft="30dp"
-        android:textColor="#000000"/>
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Informe seu nome completo"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/black" />
 
     <TextView
         android:id="@+id/textView16"
@@ -134,6 +136,7 @@
         android:layout_height="24dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
+        android:textSize="18sp"
         android:fontFamily="@font/inter_bold"
         android:text="Sexo"
         android:textColor="#D75452" />
@@ -159,6 +162,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:text="Nascimento"
         android:textColor="#D75452" />
 
@@ -185,6 +189,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:text="C.P.F"
         android:textColor="#D75452"
         android:layout_marginLeft="30dp"
@@ -208,6 +213,7 @@
         android:layout_height="24dp"
         android:text="Celular"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -228,6 +234,7 @@
         android:layout_height="24dp"
         android:text="Fixo"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#000000"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -248,6 +255,7 @@
         android:text="E-mail"
         android:fontFamily="@font/inter_bold"
         android:textColor="#D75452"
+        android:textSize="18sp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
@@ -265,6 +273,7 @@
         android:layout_height="24dp"
         android:text="Endereço"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -283,6 +292,7 @@
         android:layout_height="24dp"
         android:text="Número"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -303,6 +313,7 @@
         android:text="Complemento"
         android:inputType="number"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#000000"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -320,6 +331,7 @@
         android:layout_height="24dp"
         android:text="Bairro"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -337,6 +349,7 @@
         android:layout_height="24dp"
         android:text="Cidade"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -353,6 +366,7 @@
         android:layout_height="24dp"
         android:text="Estado"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -369,6 +383,7 @@
         android:layout_height="24dp"
         android:text="C.E.P"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -383,9 +398,10 @@
         android:textColor="#000000"/>
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="46dp"
         android:text="Nome do Responsável Financeiro(se paciente for menor e idade)"
         android:fontFamily="@font/inter_bold"
+        android:textSize="18sp"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
@@ -393,6 +409,7 @@
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:hint="Nome do responsável"
+
         android:layout_marginLeft="30dp"
         android:textColorHint="@color/black"
         android:background="@color/white"
@@ -401,6 +418,7 @@
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="C.P.F"
+        android:textSize="18sp"
         android:fontFamily="@font/inter_bold"
         android:textColor="#D75452"
         android:layout_marginTop="40dp"
@@ -421,6 +439,7 @@
         android:text="Observação"
         android:fontFamily="@font/inter_bold"
         android:textColor="#000000"
+        android:textSize="18sp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
