@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 "Pneumologista",
                 "Pneumopediatra"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, especialidades);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_closed, R.id.spinnerText, especialidades);
         adapter.setDropDownViewResource(R.layout.spinner);
         spinnerEspecialidades.setAdapter(adapter);
 
-       /*** spinnerEspecialidades.setOnTouchListener((v, event) -> {
+        spinnerEspecialidades.setOnTouchListener((v, event) -> {
             ArrayAdapter<String> adapterOpened = new ArrayAdapter<>(this, R.layout.spinner, R.id.spinnerText, especialidades);
             adapterOpened.setDropDownViewResource(R.layout.spinner);
             spinnerEspecialidades.setAdapter(adapterOpened);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
                //nada aqui
             }
-        });***/
+        });
     }
 
     public void trocar(View view) {
