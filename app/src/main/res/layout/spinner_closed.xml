@@ -17,11 +17,5 @@
         android:fontFamily="@font/inter_bold"
         android:gravity="center_vertical"/>
 
-    <ImageView
-        android:id="@+id/spinnerArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_arrow" />
+
 </RelativeLayout>

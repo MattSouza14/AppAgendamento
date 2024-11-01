@@ -64,17 +64,17 @@
             android:textSize="20sp" />
     </FrameLayout>
 
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#EEEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.289" />
-
+        app:layout_constraintVertical_bias="0.282" />
 
     <TextView
         android:id="@+id/textView6"
@@ -93,12 +93,13 @@
         app:layout_constraintVertical_bias="0.321" />
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="402dp"
+        android:layout_height="222dp"
         android:columnCount="3"
         android:padding="10dp"
         android:rowCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.525">
@@ -109,9 +110,11 @@
             android:layout_columnSpan="1"
             android:layout_marginRight="10dp"
             android:background="#B0C4DE"
+            android:fontFamily="@font/inter_bold"
             android:text="Manhã"
             android:textAlignment="center"
             android:textColor="#000000"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -120,9 +123,11 @@
             android:layout_columnSpan="1"
             android:layout_marginRight="10dp"
             android:background="#B0C4DE"
+            android:fontFamily="@font/inter_bold"
             android:text="Tarde"
             android:textAlignment="center"
             android:textColor="#000000"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -130,9 +135,11 @@
             android:layout_height="wrap_content"
             android:layout_columnSpan="1"
             android:background="#B0C4DE"
+            android:fontFamily="@font/inter_bold"
             android:text="Noite"
             android:textAlignment="center"
             android:textColor="#000000"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <CheckBox
@@ -256,6 +263,7 @@
         android:text="* Campo em vermelho são de preenchimento obrigatório!"
         android:textAlignment="center"
         android:textColor="#D75452"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
