@@ -140,7 +140,8 @@
         android:textSize="18sp"
         android:fontFamily="@font/inter_bold"
         android:text="Sexo"
-        android:textColor="#D75452" />
+        android:textColor="#D75452"
+        />
 
     <Spinner
         android:id="@+id/spinnerGenero"
@@ -148,13 +149,20 @@
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
         android:background="@color/white"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.79"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        android:textColor="#000000"/>
+
+
+
+    <ImageView
+        android:id="@+id/spinnerArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginTop="-41dp"
+        android:layout_marginLeft="340dp"
+        />
 
     <TextView
         android:id="@+id/textView17"
@@ -377,7 +385,18 @@
         android:layout_height="54dp"
         android:layout_marginLeft="30dp"
         android:background="@color/white"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:src="@drawable/ic_arrow"/>
+    <ImageView
+        android:id="@+id/spinnerArrow5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginTop="-41dp"
+        android:layout_marginLeft="340dp"
+        />
     <TextView
         android:layout_width="278dp"
         android:layout_height="24dp"

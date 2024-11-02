@@ -1,0 +1,24 @@
+<!-- res/layout/dialog_agendamento.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta Agendada"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_bold" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua consulta foi agendada com sucesso!"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_bold" />
+</LinearLayout>
