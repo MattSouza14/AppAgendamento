@@ -238,7 +238,7 @@
         android:inputType="phone"
         android:textColor="#000000" />
     <TextView
-        android:id="@+id/textView20"
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Fixo"
@@ -248,6 +248,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView20"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="phone"
@@ -258,7 +259,7 @@
         android:textColor="#000000"/>
 
     <TextView
-        android:id="@+id/textView21"
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="E-mail"
@@ -268,6 +269,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView21"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="textEmailAddress"
@@ -277,7 +279,7 @@
         android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
-        android:id="@+id/textView22"
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Endereço"
@@ -287,6 +289,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView22"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="textPostalAddress"
@@ -296,7 +299,7 @@
         android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
-        android:id="@+id/textView23"
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Número"
@@ -306,6 +309,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView23"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="number"
@@ -315,7 +319,7 @@
         android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
-        android:id="@+id/textView24"
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:textColorHint="@color/black"
@@ -326,6 +330,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView24"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="text"
@@ -335,6 +340,7 @@
         android:textColorHint="@color/black"
         android:textColor="#000000"/>
     <TextView
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Bairro"
@@ -344,6 +350,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView25"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="text"
@@ -353,6 +360,7 @@
         android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Cidade"
@@ -362,6 +370,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView26"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:hint="Informe a cidade"
@@ -370,6 +379,7 @@
         android:background="@color/white"
         android:textColor="#000000"/>
     <TextView
+
         android:layout_width="278dp"
         android:layout_height="24dp"
         android:text="Estado"
@@ -380,6 +390,7 @@
         android:layout_marginLeft="30dp"/>
 
     <Spinner
+
         android:id="@+id/spinnerEstados"
         android:layout_width="360dp"
         android:layout_height="54dp"
@@ -407,6 +418,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView28"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="number"
@@ -425,6 +437,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView29"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:hint="Nome do responsável"
@@ -443,6 +456,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView30"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -462,6 +476,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"/>
     <EditText
+        android:id="@+id/textView31"
         android:layout_width="360dp"
         android:layout_height="54dp"
         android:inputType="text"

@@ -1,5 +1,4 @@
 package com.example.clinicproject;
-import android.widget.EditText;
 
 import java.io.Serializable;
 public class PatientInfo  implements Serializable{
@@ -21,7 +20,7 @@ public class PatientInfo  implements Serializable{
     private String cpfFinancialManager;
     private String observation;
 
-    public PatientInfo(String completName, String cpf) {
+    public PatientInfo(String nome, String cpfString, String celular, String fixo, String emailString, String enderecoString, String numeroCasaString, String complementoString, String bairroString, String cidadeString, String estadoString, String cepString, String responsavel, String completName, String cpf) {
         this.completName = completName;
         this.cpf = cpf;
     }

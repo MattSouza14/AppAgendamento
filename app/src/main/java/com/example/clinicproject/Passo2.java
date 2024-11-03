@@ -83,10 +83,11 @@ public class Passo2 extends AppCompatActivity {
         Spinner spinnerMedicos = findViewById(R.id.spinnerMedico);
         String[] medicos = {
                 "Médicos disponiveis",
-                "Nabel Saldanha2",
-                "Nabel Saldanha3",
-                "Nabel Saldanha4",
-                "Nabel Saldanha5"
+                "Nabel Saldanha",
+                "Emmanuemle Lima de Macedo",
+                "Lorena Viana Madeira",
+                "Talita Vasconcelos Moura Araújo",
+                "Mariana Castiglioni"
 
 
 
